@@ -37,10 +37,14 @@ namespace TP2_GRUPO_4
             }
             
         }
+
+        //Validacion de campos completos, para poder dar un resumen
         protected bool validReponse()
         {
             return !nameTextBox.Text.Trim().Equals("") && !responseSurnameLabel.Text.Trim().Equals("") && isSomeBoxSelected(themeCheckBoxList);
         }
+
+        //Validacion hay casillas tildadas?
         protected bool isSomeBoxSelected(CheckBoxList cbList)
         {
             bool isSomeSelected = false;
@@ -55,6 +59,8 @@ namespace TP2_GRUPO_4
             }
             return isSomeSelected;
         }
+
+        //En caso de tener campos seleccionados, cuales son?
         protected String whoIsSelected(CheckBoxList cbList)
         {
             String selectedFields = null;
@@ -68,6 +74,8 @@ namespace TP2_GRUPO_4
 
             return selectedFields.Trim();
         }
+
+       //En caso luego de completar los campos y mostrar un resumen, si quito alguno de los campos y vuelvo a validar con algun campo vacio reseteo su visibilidad
         protected void resetFieldValues()
         {
             responseNameLabel.Visible = false;
