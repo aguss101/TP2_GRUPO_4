@@ -67,11 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ejercicio2.aspx" />
+    <Content Include="Ejercicio3.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Primer_Pagina.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejercicio2.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Ejercicio2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio2.aspx.designer.cs" />
+    <Compile Include="Ejercicio3.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Ejercicio3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio3.aspx.designer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -83,6 +96,13 @@
       <DependentUpon>Primer_Pagina.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
