@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luka\\Desktop\\Proyecto\\TP2_GRUPO_4\\",
+  "WorkspaceRootPath": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp2_grupo_4\\ejercicio3.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|c:\\facultad\\proyectos\\tp2_grupo_4\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|solutionrelative:webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|c:\\facultad\\proyectos\\tp2_grupo_4\\ejercicio3.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|solutionrelative:ejercicio3.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp2_grupo_4\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|solutionrelative:ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp2_grupo_4\\ejercicio3.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\ejercicio3.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A7FF92B-8EE6-48D4-84C3-F0F7DFBDFE54}|TP2_GRUPO_4.csproj|solutionrelative:ejercicio3.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,15 +26,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "WebForm1.aspx.cs",
+              "ToolTip": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\WebForm1.aspx.cs",
+              "RelativeToolTip": "WebForm1.aspx.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T13:44:24.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Ejercicio3.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP2_GRUPO_4\\Ejercicio3.aspx.designer.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\Ejercicio3.aspx.designer.cs",
               "RelativeDocumentMoniker": "Ejercicio3.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP2_GRUPO_4\\Ejercicio3.aspx.designer.cs",
+              "ToolTip": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\Ejercicio3.aspx.designer.cs",
               "RelativeToolTip": "Ejercicio3.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -39,26 +56,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ejercicio2.aspx",
-              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP2_GRUPO_4\\Ejercicio2.aspx",
+              "DocumentMoniker": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\Ejercicio2.aspx",
               "RelativeDocumentMoniker": "Ejercicio2.aspx",
-              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP2_GRUPO_4\\Ejercicio2.aspx",
+              "ToolTip": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\Ejercicio2.aspx",
               "RelativeToolTip": "Ejercicio2.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-04-04T03:59:26.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Ejercicio3.aspx",
-              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP2_GRUPO_4\\Ejercicio3.aspx",
+              "DocumentMoniker": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\Ejercicio3.aspx",
               "RelativeDocumentMoniker": "Ejercicio3.aspx",
-              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP2_GRUPO_4\\Ejercicio3.aspx",
+              "ToolTip": "C:\\FACULTAD\\PROYECTOS\\TP2_GRUPO_4\\Ejercicio3.aspx",
               "RelativeToolTip": "Ejercicio3.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-04-04T03:59:03.857Z",
               "EditorCaption": ""

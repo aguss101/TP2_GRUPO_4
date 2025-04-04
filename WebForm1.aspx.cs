@@ -16,11 +16,13 @@ namespace TP2_GRUPO_4
 		}
 
         protected void btnTable_Click(object sender, EventArgs e)
-        {
+		{
 
 			string product = tbProduct1.Text;
+			string product2 = tbProduct2.Text;
 			int amount = int.Parse(tbAmount.Text);
-            string table = "<table border = '1'";
+			int amount2 = int.Parse(tbAmount2.Text);
+			string table = "<table border = '1'";
 			table += "<tr><td>Producto</td><td>Cantidad</td> </tr>";
 			for(int i = 1; i <=1; i++)
 			{
@@ -28,11 +30,17 @@ namespace TP2_GRUPO_4
 				table += "<td>" + product + "</td>";
                 table += "<td>" +  amount +  "</td>";
                 table += "</tr>";
-                
+                table += "<tr>";
+                table += "<td>" + product2 + "</td>";
+                table += "<td>" + amount2 + "</td>";
+                table += "</tr>";
+
 
             }
+			int total = amount + amount2;
+
 			
-			table += "</table>";
+			table += "<tr><td>TOTAL</td>"+"<td>" + total+ "</td>"+"</tr></table>";
 			lblTable.Text = table;
 			
         }
