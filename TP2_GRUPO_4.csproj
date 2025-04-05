@@ -69,9 +69,11 @@
   <ItemGroup>
     <Content Include="Ejercicio2.aspx" />
     <Content Include="Ejercicio3.aspx" />
+    <Content Include="Ejercicio5.aspx" />
     <Content Include="Ejercicio4.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Primer_Pagina.aspx" />
+    <Content Include=".gitignore" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -86,6 +88,13 @@
       <DependentUpon>Ejercicio3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ejercicio3.aspx.designer.cs" />
+    <Compile Include="Ejercicio5.aspx.cs">
+      <DependentUpon>Ejercicio5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio5.aspx.designer.cs">
+      <DependentUpon>Ejercicio5.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ejercicio4.aspx.cs">
       <DependentUpon>Ejercicio4.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
