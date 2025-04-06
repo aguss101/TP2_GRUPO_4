@@ -36,6 +36,13 @@
             <asp:Button ID="entryButton" runat="server" Text="Iniciar Sesión" OnClick="entryButton_Click" Width="264px" />
         </div>
         <asp:Label ID="welcomeMessage" runat="server" Text="BIENVENIDO USUARIO" Visible="False"></asp:Label>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="Ej1" runat="server" OnClick="Ej1_Click" Text="Ejercicio1" />
+        </p>
     </form>
 </body>
 </html>

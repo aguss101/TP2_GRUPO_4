@@ -83,5 +83,10 @@ namespace TP2_GRUPO_4
             responseThemesLabel.Visible = false;
             responseZoneLabel.Visible = false;
         }
+
+        protected void Ej1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm1.aspx");
+        }
     }
 }

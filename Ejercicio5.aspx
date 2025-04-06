@@ -71,6 +71,11 @@
                 </tr>
             </table>
         </div>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="Ej1" runat="server" OnClick="Ej1_Click" Text="Ejercicio 1" />
+        </p>
     </form>
 </body>
 </html>

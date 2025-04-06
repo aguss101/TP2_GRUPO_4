@@ -11,7 +11,7 @@ namespace TP2_GRUPO_4
     {
         protected void BtnVolver_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Primer_Pagina.aspx");
+            Response.Redirect("WebForm1.aspx");
         }
     }
 }

@@ -23,6 +23,25 @@
         .auto-style5 {
             width: 49px;
         }
+        .auto-style6 {
+            width: 256px;
+            height: 35px;
+        }
+        .auto-style7 {
+            width: 114px;
+            height: 35px;
+        }
+        .auto-style8 {
+            width: 87px;
+            height: 35px;
+        }
+        .auto-style9 {
+            width: 49px;
+            height: 35px;
+        }
+        .auto-style10 {
+            height: 35px;
+        }
     </style>
 </head>
 <body style="height: 201px; margin-bottom: 19px">
@@ -32,14 +51,14 @@
         </div>
         <table class="auto-style1">
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style9"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style10"></td>
             </tr>
             <tr>
                 <td class="auto-style3">
@@ -56,8 +75,12 @@
                 </td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="Ej2" runat="server" OnClick="Ej2_Click" Text="Ejercicio 2" />
+                </td>
+                <td>
+                    <asp:Button ID="Ej4" runat="server" OnClick="Ej4_Click" Text="Ejercicio 4" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style3">
@@ -74,8 +97,12 @@
                 </td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="Ej3" runat="server" OnClick="Ej3_Click" Text="Ejercicio 3" />
+                </td>
+                <td>
+                    <asp:Button ID="Ej5" runat="server" OnClick="Ej5_Click" Text="Ejercicio 5" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>

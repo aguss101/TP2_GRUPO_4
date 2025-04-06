@@ -49,5 +49,10 @@ namespace TP2_GRUPO_4
             resumePrice.Text = "El precio final es de " + sum.ToString() + "$";
             resumePrice.Visible = true;
         }
+
+        protected void Ej1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm1.aspx");
+        }
     }
 }
