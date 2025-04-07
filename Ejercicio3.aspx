@@ -3,35 +3,40 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
-            <title>Ejercicio 5</title>
-    <style type="text/css">
-
-        .auto-style1 {
-            font-size: 14px;
-            margin-bottom: 30px;
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-       </style>
-    </head>
-    <body>
-
-            <form id="form1" runat="server">
-            <div>
-                <a href="#" onclick="cambiarColor('Red'); return false;">Rojo</a> <br/>
-                <a href="#" onclick="cambiarColor('Blue'); return false;">Azul</a> <br/>
-                <a href="#" onclick="cambiarColor('Green'); return false;">Verde</a> <br/> <br/>    
-
-                        <asp:Label  ID="lbl1" runat="server" Text="Texto coloreado"></asp:Label>
-
-                
-                <script type="text/javascript">
-                    function cambiarColor(color) 
-                    {
-                        document.getElementById('<%= lbl1.ClientID %>').style.color = color;
-                    }
-                </script>
-                    <asp:Button Class="auto-style1" ID="BtnVolver" runat="server" OnClick="BtnVolver_Click" Text="Ejercicio 1" />
-            </div>
-        </form>
-    </body>
+        .color-box {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #CC99FF; 
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="centered-container">
+            <asp:LinkButton ID="lbRojo" runat="server" OnClick="lbRojo_Click">Rojo</asp:LinkButton>
+            <br />
+            <asp:LinkButton ID="lbVerde" runat="server" OnClick="lbVerde_Click">Verde</asp:LinkButton>
+            <br />
+            <asp:LinkButton ID="lbAzul" runat="server" OnClick="lbAzul_Click">Azul</asp:LinkButton>
+            <br />
+            <br />
+            <asp:Panel ID="pColorSelected" runat="server" CssClass="color-box" Height="72px" Width="287px" BackColor="White"></asp:Panel>
+            <br />
+            <asp:Label ID="lblColorChange" runat="server" Text="Texto Coloreado"></asp:Label>
+        </div>
+    </form>
+</body>
 </html>
