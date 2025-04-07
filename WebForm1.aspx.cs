@@ -8,46 +8,46 @@ using System.Xml.Schema;
 
 namespace TP2_GRUPO_4
 {
-	public partial class WebForm1 : System.Web.UI.Page
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-		}
+        }
 
         protected void btnTable_Click(object sender, EventArgs e)
-		{
+        {
+            
+            string product1 = HttpUtility.HtmlEncode(tbProduct1.Text.Trim());
+            string product2 = HttpUtility.HtmlEncode(tbProduct2.Text.Trim());
+            string amountText1 = tbAmount.Text.Trim();
+            string amountText2 = tbAmount2.Text.Trim();
 
-			string product = tbProduct1.Text;
-			string product2 = tbProduct2.Text;
-			int amount = int.Parse(tbAmount.Text);
-			int amount2 = int.Parse(tbAmount2.Text);
-			string table = "<table border = '1'";
-			table += "<tr><td>Producto</td><td>Cantidad</td> </tr>";
-			for(int i = 1; i <=1; i++)
-			{
-				table += "<tr>";
-				table += "<td>" + product + "</td>";
-                table += "<td>" +  amount +  "</td>";
-                table += "</tr>";
-                table += "<tr>";
-                table += "<td>" + product2 + "</td>";
-                table += "<td>" + amount2 + "</td>";
-                table += "</tr>";
+            
+            int amount1, amount2;
+            bool isValid1 = int.TryParse(amountText1, out amount1);
+            bool isValid2 = int.TryParse(amountText2, out amount2);
 
-
+            if (!isValid1 || !isValid2)
+            {
+                lblTable.Text = "<span style='color:red;'>Por favor ingrese cantidades numéricas válidas.</span>";
+                return;
             }
-			int total = amount + amount2;
 
-			
-			table += "<tr><td>TOTAL</td>"+"<td>" + total+ "</td>"+"</tr></table>";
-			lblTable.Text = table;
-			
+            
+            string table = "<table border='1'>";
+            table += "<tr><td><strong>Producto</strong></td><td><strong>Cantidad</strong></td></tr>";
+            table += $"<tr><td>{product1}</td><td>{amount1}</td></tr>";
+            table += $"<tr><td>{product2}</td><td>{amount2}</td></tr>";
+            table += $"<tr><td><strong>TOTAL</strong></td><td>{amount1 + amount2}</td></tr>";
+            table += "</table>";
+
+            lblTable.Text = table;
         }
 
         protected void Ej2_Click(object sender, EventArgs e)
         {
-			Response.Redirect("Ejercicio2.aspx");
+            Response.Redirect("Ejercicio2.aspx");
         }
 
         protected void Ej3_Click(object sender, EventArgs e)
