@@ -9,8 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <div style="text-align:center; margin-top: 100px;">
+    <asp:Label ID="lblWrongUser" runat="server" Font-Size="X-Large" Font-Bold="True">Ha superado el limite de intentos, vuelva a intentarlo mas tarde!</asp:Label>
+</div>
     </form>
 </body>
 </html>

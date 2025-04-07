@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Security.Policy;
+using System.Web.Services.Description;
 
 namespace TP2_GRUPO_4
 {
+
     public partial class Ejercicio4 : System.Web.UI.Page
     {
+        private int failedAttempsCounter = 0;
         // Clase interna para representar un usuario
         public class User
         {
@@ -28,8 +32,7 @@ namespace TP2_GRUPO_4
             new User("luca", "Gauna1234")
         };
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        protected void Page_Load(object sender, EventArgs e) {
 
         }
 
@@ -38,30 +41,44 @@ namespace TP2_GRUPO_4
             string inputUser = usernameTxtBox.Text.Trim();
             string inputPass = passwordTxtBox.Text;
 
-            User input = new User(inputUser, inputPass);
+            User user = new User(inputUser, inputPass);
 
-            if (IsValidUser(input, users))
+            if (ViewState["failedAttempsCounterState"] != null)
             {
-                string encodedName = Server.UrlEncode(input.GetUsername());
-                Response.Redirect("Ejercicio4b.aspx?msg=" + encodedName);
-            }
-            else
-            {
-                Response.Redirect("Ejercicio4c.aspx");
+                failedAttempsCounter = (int)ViewState["failedAttempsCounterState"] + 1;
+
+
+                if (IsValidUser(user, users))
+                {
+                    string encodedName = Server.UrlEncode(user.GetUsername());
+                    Response.Redirect("Ejercicio4b.aspx?msg=" + encodedName);
+                }
+                else
+                {
+
+                    ViewState["failedAttempsCounterState"] = failedAttempsCounter;
+                    Response.Write(failedAttempsCounter);
+                    if (failedAttempsCounter > 1)
+                    {
+                        Response.Redirect("Ejercicio4c.aspx");
+                    }
+                }
+
             }
         }
-
-        private bool IsValidUser(User input, User[] userList)
+        protected bool IsValidUser(User user, User[] userList)
         {
-            foreach (User u in userList)
+            bool validUser = false;
+            
+            foreach (User us in userList)
             {
-                if (u.GetUsername().Equals(input.GetUsername(), StringComparison.OrdinalIgnoreCase)
-                    && u.GetPassword().Equals(input.GetPassword()))
+                if (us.GetUsername().Equals(user.GetUsername()) && us.GetPassword().Equals(user.GetPassword()))
                 {
-                    return true;
+                    validUser = true;
+                    break;
                 }
             }
-            return false;
+            return validUser;
         }
     }
 }
