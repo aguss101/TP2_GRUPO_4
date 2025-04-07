@@ -11,7 +11,7 @@ namespace TP2_GRUPO_4
 {
 
 
-    public partial class Ejercicio4
+    public partial class Ejercicio4b
     {
 
         /// <summary>
@@ -24,30 +24,12 @@ namespace TP2_GRUPO_4
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control usernameTxtBox.
+        /// Control lblWelcome.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameTxtBox;
-
-        /// <summary>
-        /// Control passwordTxtBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordTxtBox;
-
-        /// <summary>
-        /// Control entryButton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entryButton;
+        protected global::System.Web.UI.WebControls.Label lblWelcome;
     }
 }
