@@ -48,9 +48,8 @@
         <td>
             <asp:DropDownList ID="zoneDropdownList" runat="server">
                 <asp:ListItem>Gral Pacheco</asp:ListItem>
-                <asp:ListItem>Talar</asp:ListItem>
-                <asp:ListItem>San Fernando</asp:ListItem>
-                <asp:ListItem>Don Torcuato</asp:ListItem>
+                <asp:ListItem>San Miguel</asp:ListItem>
+                <asp:ListItem>Boedo</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>

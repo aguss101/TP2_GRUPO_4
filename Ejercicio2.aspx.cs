@@ -22,12 +22,17 @@ namespace TP2_GRUPO_4
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
+                string city = transformValuesZone(zoneDropdownList);
+
+
             if (validReponse())
             {
                 responseNameLabel.Visible = true;
                 responseNameLabel.Text = nameTextBox.Text;
                 responseSurnameLabel.Visible = true;
                 responseSurnameLabel.Text = surnameTextBox.Text;
+                responseZoneLabel.Visible = true;
+                responseZoneLabel.Text = city;
                 responseThemesLabel.Visible = true;
                 responseThemesLabel.Text = whoIsSelected(themeCheckBoxList);
             }
@@ -87,6 +92,25 @@ namespace TP2_GRUPO_4
         protected void Ej1_Click(object sender, EventArgs e)
         {
             Response.Redirect("WebForm1.aspx");
+        }
+
+        protected string transformValuesZone(DropDownList drop )
+        {
+            switch (zoneDropdownList.SelectedIndex)
+            {
+                case 1: return "Zona Oeste"; 
+
+                case 2: return "Zona Sur"; 
+
+                case 0: return "Zona Norte"; 
+
+                default: return "Zona no seleccionada.";
+
+
+
+
+
+            }
         }
     }
 }
