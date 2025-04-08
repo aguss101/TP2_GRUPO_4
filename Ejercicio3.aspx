@@ -21,10 +21,6 @@
             vertical-align: middle;
             background-color: #CC99FF; 
         }
-        /*#form1 {
-            height: 295px;
-            margin-bottom: 3px;
-        }*/
         .auto-style1 {
             width: 33%;
         }
@@ -124,8 +120,8 @@
     </style>
 </head>
 <body>
-    <div>
-        <form id="form1" runat="server">
+    <form id="form1" runat="server">
+        <div>
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style5">&nbsp;</td>
@@ -137,7 +133,8 @@
                 <tr>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style7">
-                        &nbsp;</td>
+                        &nbsp;
+                    </td>
                     <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
@@ -181,7 +178,7 @@
                     <td class="auto-style4"></td>
                 </tr>
             </table>
-        </form>
-    </div>
+        </div>
+    </form>
 </body>
 </html>

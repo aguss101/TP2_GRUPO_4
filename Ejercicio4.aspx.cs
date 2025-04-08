@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Security.Policy;
 using System.Web.Services.Description;
 
@@ -57,11 +58,12 @@ namespace TP2_GRUPO_4
                 failedAttempsCounter = (int)ViewState["failedAttempsCounterState"] + 1;
                 if (failedAttempsCounter == 1)
                 {
-                    Response.Write("Lleva " + failedAttempsCounter + " intento de 3");
+                    //Response.Write("Lleva " + failedAttempsCounter + " intento de 3");
+                    attemptsShown.Text = "<span class='literal-class';>Lleva " + failedAttempsCounter + " intento de 3 </span>";
                 }
                 else
                 {
-                    Response.Write("Lleva " + failedAttempsCounter + " intentos de 3");
+                    attemptsShown.Text = "<span class='literal-class';>Lleva " + failedAttempsCounter + " intentos de 3 </span>";
                 }
                     if (IsValidUser(user, users))
                 {
@@ -105,6 +107,14 @@ namespace TP2_GRUPO_4
             return validUser;
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MainForm.aspx");
+        }
 
+        protected void usernameTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -74,8 +74,8 @@
     </style>
 </head>
 <body style="height: 421px; width: 627px; margin-right: 0px; margin-bottom: 2px;">
-    <div>
     <form id="form2" runat="server">
+    <div>
         
             <table class="auto-style1">
     <tr>
@@ -186,12 +186,10 @@ BackColor="#FF66FF" >
         <td class="auto-style9">
             </td>
     </tr>
-
-
-    
 </table>
             
-    </form>
+    
     </div>
+    </form>
 </body>
 </html>
