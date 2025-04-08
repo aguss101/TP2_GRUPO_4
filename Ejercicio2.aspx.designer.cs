@@ -24,6 +24,15 @@ namespace TP2_GRUPO_4
         protected global::System.Web.UI.HtmlControls.HtmlForm form2;
 
         /// <summary>
+        /// Volver control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Volver;
+
+        /// <summary>
         /// nameTextBox control.
         /// </summary>
         /// <remarks>
@@ -60,15 +69,6 @@ namespace TP2_GRUPO_4
         protected global::System.Web.UI.WebControls.CheckBoxList themeCheckBoxList;
 
         /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
         /// tittleLabel control.
         /// </summary>
         /// <remarks>
@@ -76,6 +76,15 @@ namespace TP2_GRUPO_4
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label tittleLabel;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// nameLabel control.
@@ -148,14 +157,5 @@ namespace TP2_GRUPO_4
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label responseThemesLabel;
-
-        /// <summary>
-        /// Ej1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Ej1;
     }
 }

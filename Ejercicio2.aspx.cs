@@ -91,7 +91,7 @@ namespace TP2_GRUPO_4
 
         protected void Ej1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("WebForm1.aspx");
+            Response.Redirect("MainForm.aspx");
         }
 
         protected string transformValuesZone(DropDownList drop )
@@ -111,6 +111,11 @@ namespace TP2_GRUPO_4
 
 
             }
+        }
+
+        protected void themeCheckBoxList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
