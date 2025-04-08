@@ -55,9 +55,15 @@ namespace TP2_GRUPO_4
             if (ViewState["failedAttempsCounterState"] != null)
             {
                 failedAttempsCounter = (int)ViewState["failedAttempsCounterState"] + 1;
-                Response.Write(failedAttempsCounter);
-
-                if (IsValidUser(user, users))
+                if (failedAttempsCounter == 1)
+                {
+                    Response.Write("Lleva " + failedAttempsCounter + " intento de 3");
+                }
+                else
+                {
+                    Response.Write("Lleva " + failedAttempsCounter + " intentos de 3");
+                }
+                    if (IsValidUser(user, users))
                 {
                     string encodedName = Server.UrlEncode(user.GetUsername());
                     Response.Redirect("Ejercicio4b.aspx?msg=" + encodedName);
@@ -66,15 +72,15 @@ namespace TP2_GRUPO_4
                 {
 
                     ViewState["failedAttempsCounterState"] = failedAttempsCounter;
-                    
+
                     if (failedAttempsCounter > 2)
                     {
                         failedAttempsCounter = 0;
                         Response.Redirect("Ejercicio4c.aspx");
-                        
 
-                            
-                        }
+
+
+                    }
 
                 }
 
