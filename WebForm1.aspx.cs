@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -25,11 +26,29 @@ namespace TP2_GRUPO_4
 
             
             int amount1, amount2;
+
             bool isValid1 = int.TryParse(amountText1, out amount1);
             bool isValid2 = int.TryParse(amountText2, out amount2);
 
+            if (product1 == "" || product2 == "")
+            {
+                lblTable.Text = "<span style='color:red;'>Por favor ingrese nombres de los productos.</span>";
+                return;
+            }
+            else if (product1.Any(char.IsDigit) || (product2.Any(char.IsDigit) ) )
+            {
+                tbProduct1.Text = "";
+                tbProduct2.Text = "";
+
+                lblTable.Text = "<span style='color:red;'>Por favor ingrese nombres validos.</span>";
+                return;
+            }
+
             if (!isValid1 || !isValid2)
             {
+                tbAmount.Text = "";
+                tbAmount2.Text = "";
+
                 lblTable.Text = "<span style='color:red;'>Por favor ingrese cantidades numéricas válidas.</span>";
                 return;
             }
@@ -63,6 +82,19 @@ namespace TP2_GRUPO_4
         protected void Ej5_Click(object sender, EventArgs e)
         {
             Response.Redirect("Ejercicio5.aspx");
+        }
+
+        protected void Reset_Click(object sender, EventArgs e)
+        {
+            string table = "" ;
+
+            tbProduct1.Text = "";
+            tbProduct2.Text = "";
+            tbAmount.Text = "";
+            tbAmount2.Text = "";
+
+            lblTable.Text = table;
+
         }
     }
 }

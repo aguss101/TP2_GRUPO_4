@@ -118,7 +118,9 @@
                 <td class="auto-style3">
                     <asp:Button ID="btnTable" runat="server" OnClick="btnTable_Click" Text="Generar Tabla" Width="143px" />
                 </td>
-                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style2">
+                    <asp:Button ID="Reset" runat="server" OnClick="Reset_Click" Text="Resetear tabla" />
+                </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
