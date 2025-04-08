@@ -44,7 +44,7 @@ namespace TP2_GRUPO_4
                 return;
             }
 
-            if (!isValid1 || !isValid2 || !(amount1 < 0) || !(amount2<0))
+            if (!isValid1 || !isValid2 || (amount1 <= 0) || (amount2 <= 0))
             {
                 tbAmount.Text = "";
                 tbAmount2.Text = "";
