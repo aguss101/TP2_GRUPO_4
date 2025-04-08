@@ -37,12 +37,16 @@ namespace TP2_GRUPO_4
             {
                 ViewState["failedAttempsCounterState"] = 0;
 
-            }
+            } 
+           
+
+
 
         }
 
         protected void entryButton_Click(object sender, EventArgs e)
         {
+            
             string inputUser = usernameTxtBox.Text.Trim();
             string inputPass = passwordTxtBox.Text;
 
@@ -65,12 +69,21 @@ namespace TP2_GRUPO_4
                     
                     if (failedAttempsCounter > 2)
                     {
+                        failedAttempsCounter = 0;
                         Response.Redirect("Ejercicio4c.aspx");
-                    }
+                        
+
+                            
+                        }
+
+                }
+
+                    
                 }
 
             }
-        }
+        
+       
         protected bool IsValidUser(User user, User[] userList)
         {
             bool validUser = false;
@@ -85,5 +98,7 @@ namespace TP2_GRUPO_4
             }
             return validUser;
         }
+
+
     }
 }

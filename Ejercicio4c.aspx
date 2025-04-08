@@ -8,10 +8,13 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form runat="server">
         <div style="text-align:center; margin-top: 100px;">
     <asp:Label ID="lblWrongUser" runat="server" Font-Size="X-Large" Font-Bold="True">Ha superado el limite de intentos, vuelva a intentarlo mas tarde!</asp:Label>
 </div>
+        <div style="text-align:center; margin-top: 100px;">
+        <asp:LinkButton ID="lbBackToLog" runat="server" OnClick="LinkButton1_Click" PostBackUrl="~/Ejercicio4.aspx">Volver al Inicio</asp:LinkButton>
+            </div>
     </form>
 </body>
 </html>
