@@ -33,5 +33,10 @@ namespace TP2_GRUPO_4
             lblColorChange.ForeColor = Color.Blue;
             pColorSelected.BackColor = Color.Blue;
         }
+
+        protected void Volver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MainForm.aspx");
+        }
     }
 }
