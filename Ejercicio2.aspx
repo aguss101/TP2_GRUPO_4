@@ -75,9 +75,6 @@
                 <asp:Label ID="nameLabel" runat="server" Text="Label">Nombre: </asp:Label>
                 <asp:Label ID="responseNameLabel" runat="server" Text="Label" Visible="False">response</asp:Label>
         </div>
-            
-
-            
 
         <p>
                 <asp:Label ID="surnameLabel" runat="server" Text="Label">Apellido: </asp:Label>
@@ -91,9 +88,6 @@
         <asp:Label ID="themesLabel" runat="server" Text="Label">Temas: </asp:Label>
         <asp:Label ID="responseThemesLabel" runat="server" Text="response" Visible="False"></asp:Label>
 </p>
-            
-
-            
 
         <p>
             &nbsp;</p>

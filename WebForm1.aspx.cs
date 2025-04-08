@@ -44,7 +44,7 @@ namespace TP2_GRUPO_4
                 return;
             }
 
-            if (!isValid1 || !isValid2)
+            if (!isValid1 || !isValid2 || !(amount1 < 0) || !(amount2<0))
             {
                 tbAmount.Text = "";
                 tbAmount2.Text = "";
@@ -64,24 +64,9 @@ namespace TP2_GRUPO_4
             lblTable.Text = table;
         }
 
-        protected void Ej2_Click(object sender, EventArgs e)
+        protected void Volver_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Ejercicio2.aspx");
-        }
-
-        protected void Ej3_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Ejercicio3.aspx");
-        }
-
-        protected void Ej4_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Ejercicio4.aspx");
-        }
-
-        protected void Ej5_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Ejercicio5.aspx");
+            Response.Redirect("MainForm.aspx");
         }
 
         protected void Reset_Click(object sender, EventArgs e)
