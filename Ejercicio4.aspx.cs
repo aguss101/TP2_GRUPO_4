@@ -33,6 +33,11 @@ namespace TP2_GRUPO_4
         };
 
         protected void Page_Load(object sender, EventArgs e) {
+            if (!IsPostBack)
+            {
+                ViewState["failedAttempsCounterState"] = 0;
+
+            }
 
         }
 
@@ -46,7 +51,7 @@ namespace TP2_GRUPO_4
             if (ViewState["failedAttempsCounterState"] != null)
             {
                 failedAttempsCounter = (int)ViewState["failedAttempsCounterState"] + 1;
-
+                Response.Write(failedAttempsCounter);
 
                 if (IsValidUser(user, users))
                 {
@@ -57,8 +62,8 @@ namespace TP2_GRUPO_4
                 {
 
                     ViewState["failedAttempsCounterState"] = failedAttempsCounter;
-                    Response.Write(failedAttempsCounter);
-                    if (failedAttempsCounter > 1)
+                    
+                    if (failedAttempsCounter > 2)
                     {
                         Response.Redirect("Ejercicio4c.aspx");
                     }
