@@ -27,7 +27,7 @@
         .auto-style2 {
             width: 279px;
         }
-        .colourRed {
+        .colourRed, .colourBlue, .colourGreen {
             height: 23px;
             width: 373px;
             text-align: center;
@@ -43,20 +43,8 @@
             color:#993399;
             text-decoration: none;
         }
-        .colourBlue {
-            height: 23px;
-            width: 373px;
-            text-align: center;
-            background-color: #FF66FF;
-        }
         .colourBlue:hover {
             background-color:blue;
-        }
-        .colourGreen {
-            height: 23px;
-            width: 373px;
-            text-align: center;
-            background-color: #FF66FF;
         }
         .colourGreen:hover {
             background-color:green;
