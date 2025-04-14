@@ -11,7 +11,7 @@ namespace TP2_GRUPO_4
 {
 
 
-    public partial class WebForm2
+    public partial class MainForm
     {
 
         /// <summary>

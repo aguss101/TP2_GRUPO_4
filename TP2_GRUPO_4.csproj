@@ -74,6 +74,8 @@
     <Content Include="Ejercicio5.aspx" />
     <Content Include="Ejercicio4.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="styles.css" />
+    <Content Include="TP2.aspx" />
     <Content Include="Primer_Pagina.aspx" />
     <Content Include=".gitignore" />
     <Content Include="Web.config" />
@@ -123,6 +125,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="TP2.aspx.cs">
+      <DependentUpon>TP2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TP2.aspx.designer.cs">
+      <DependentUpon>TP2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Primer_Pagina.aspx.cs">
       <DependentUpon>Primer_Pagina.aspx</DependentUpon>
