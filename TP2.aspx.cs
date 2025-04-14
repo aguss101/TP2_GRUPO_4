@@ -7,6 +7,7 @@ namespace TP2_GRUPO_4
     public partial class TP2 : System.Web.UI.Page
     {
         protected Dictionary<string, string> users;
+        protected int loginAttempts = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             users = new Dictionary<string, string>()
@@ -83,6 +84,11 @@ namespace TP2_GRUPO_4
                     break;
             }
         }
+        protected void ResetCommand(object sender, CommandEventArgs e)
+        {
+            int id = int.Parse(e.CommandArgument.ToString());
+            ResetEj(id);
+        }
         protected void NavigationButton(object sender, EventArgs e) {
             if(sender is Button btn)
             {
@@ -128,6 +134,9 @@ namespace TP2_GRUPO_4
             if (product1Name.Text == "")
             {
                 productTable.Text += "Introduzca el nombre del primer producto!<br />";
+            }else if(int.TryParse(product1Name.Text, out int namerr))
+            {
+                productTable.Text += "Introduzca un nombre válido para el primer producto!<br />";
             }
             if (!int.TryParse(product1Amount.Text, out int value1))
             {
@@ -136,6 +145,10 @@ namespace TP2_GRUPO_4
             if (product2Name.Text == "")
             {
                 productTable.Text += "Introduzca el nombre del segundo producto!<br />";
+            }
+            else if (int.TryParse(product2Name.Text, out int namerr))
+            {
+                productTable.Text += "Introduzca un nombre válido para el primer producto!<br />";
             }
             if (!int.TryParse(product2Amount.Text, out int value2))
             {
@@ -161,12 +174,19 @@ namespace TP2_GRUPO_4
                 if(ej2Name.Text == "")
                 {
                     ej2Error.Text += "Introduzca el nombre!<br />";
+                }else if (int.TryParse(ej2Name.Text, out int namerr))
+                {
+                    ej2Error.Text += "Introduzca un nombre válido!<br />";
                 }
                 if (ej2LastName.Text == "")
                 {
                     ej2Error.Text += "Introduzca el apellido!<br />";
                 }
-                if(ej2Error.Text == "")
+                else if (int.TryParse(ej2LastName.Text, out int namerr))
+                {
+                    ej2Error.Text += "Introduzca un apellido válido!<br />";
+                }
+                if (ej2Error.Text == "")
                 {
                     ej2ResumeName.Text = ej2Name.Text;
                     ej2ResumeLastname.Text = ej2LastName.Text;
@@ -242,6 +262,7 @@ namespace TP2_GRUPO_4
                         sampleColourText.ForeColor = System.Drawing.Color.Black;
                         break;
                 }
+                ColorPanel.BackColor = sampleColourText.ForeColor;
             }
         }
         protected void ValidateSession(object sender, EventArgs e)
@@ -273,10 +294,13 @@ namespace TP2_GRUPO_4
                     if (login)
                     {
                         ej4Login.Text = "Bienvenido a mi página Sr./a " + ej4User.Text;
+                        loginAttempts = 0;
                     }
                     else
                     {
-                        ej4Login.Text = "USUARIO INVALIDO, INGRESO NO PERMITIDO";
+                        ej4Login.Text = "USUARIO INVALIDO, INGRESO NO PERMITIDO </br>";
+                        loginAttempts++;
+                        ej4Login.Text += "Usted lleva un total de " + loginAttempts.ToString() + " intento/s de inicio de sesión!";
                     }
                 }
             }else if (ejercicio4b.Visible)

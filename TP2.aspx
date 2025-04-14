@@ -58,6 +58,7 @@
                 </tr>
                 <tr>
                     <td><asp:Button Text="Generar Tabla" CssClass="button" OnClick="GenerateProductTable" runat="server"/></td>
+                    <td><asp:Button Text="Reiniciar" CssClass="button" CommandArgument="1" CommandName="ResetCommand" OnCommand="ResetCommand" runat="server"/></td>
                 </tr>
                 <tr>
                     <td colspan="4"><asp:Label ID="productTable" CssClass="button" runat="server" Visible="false"/></td>
@@ -142,7 +143,10 @@
                     <td><asp:LinkButton Text="Verde" CssClass="button" runat="server" OnClick="ChangeColor"/></td>
                 </tr>
                 <tr>
-                    <td><asp:Label Text="Texto Coloreado" CssClass="button" runat="server" ID="sampleColourText"/></td>
+                    <td><asp:Panel CssClass="button" Height="50px" BorderStyle="Solid" BorderWidth="1px" BorderColor="White" BackColor="Black" runat="server" ID="ColorPanel"/></td>
+                </tr>
+                <tr>
+                    <td><asp:Label Text="Texto Coloreado" CssClass="button" BackColor="White" runat="server" ID="sampleColourText"/></td>
                 </tr>
             </table>
         </div>
